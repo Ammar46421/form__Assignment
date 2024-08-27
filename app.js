@@ -1,4 +1,4 @@
-var fiName = document.getElementById("firstName")
+var fiName = document.getElementById(firstName)
 
 // fiName.addEventListener(onclick ,function (n){
 //     console.log(fiName)
@@ -6,6 +6,7 @@ var fiName = document.getElementById("firstName")
 
 
 function firstName(fiName){
-    console.log("firstName")
+    console.log(firstName.value)
 }
 
+// document.console.log()
