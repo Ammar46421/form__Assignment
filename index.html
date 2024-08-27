@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <form action="" id="form">
-        <label for="">
-            First Name:<input id="firstName" type="text" placeholder="First Name" onclick="console.log('First Name')">
-            Last Name:<input id="lastName" type="text" placeholder="Last Name" onclick="console.log('Last Name')">
-            <button id="btn" type="submit" onclick="SubmitEvent">Submit</button>
-        </label>
-    </form>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Console Log</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Simple Form</h2>
+      <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" onclick="console.log('name')" required /><br /><br />
+        <label for="Father name">Father Name:</label>
+        <input type="text" id="fathername" name="fathername" onclick="console.log('fathername')" required /><br /><br />
+        <label for="DOB">Name:</label>
+        <input type="date" id="DOB" name="DOB" onclick="console.log('name')" required /><br /><br />
+        <!-- aad -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" onclick="console.log('email')" required /><br /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" onclick="console.log('age')" required /><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
